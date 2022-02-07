@@ -22,12 +22,10 @@ const style = {
 export default function BasicModal() {
 
   const {setModal,openModal}= useContext(DataContext)
-  const handleOpen = () =>setModal(true);
   const handleClose = () => setModal(false);
 
   return (
-    <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+    
       <Modal
         open={openModal}
         onClose={handleClose}
@@ -48,6 +46,6 @@ export default function BasicModal() {
           
         </Box>
       </Modal>
-    </div>
+    
   );
 }
